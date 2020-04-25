@@ -1,0 +1,23 @@
+{
+  "name": "legotutorial",
+  "version": "1.0.0",
+  "description": "--------------------------------------- My first go at learning web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apateonas/Web.git"
+  },
+  "author": "apateonas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apateonas/Web/issues"
+  },
+  "homepage": "https://github.com/apateonas/Web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}
