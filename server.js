@@ -1,11 +1,11 @@
 // Creates server and routes to process all requests
 
-const express = require(express);
-const app = express;
+const express = require('express');
+const app = express();
 const port = process.env.PORT || 3000;
 
 const routes = require('./api/routes');
 routes(app);
-app.listen(PORT, function() {
-	console.log('Server started on port: ' + PORT);
+app.listen(port, function() {
+	console.log('Server started on port: ' + port);
 });

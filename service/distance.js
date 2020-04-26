@@ -1,11 +1,11 @@
 var request = require('request');
 
-const apiKey = process.env.ZIPCODE_API_KEY || 'nnK8qPAskXmsGIWNDM2Gkv4loO1noMVYpwdnbKWLYUVpihz28pXjVWqz8ZGgLnbF';
+const apiKey = process.env.ZIPCODE_API_KEY || 'xFI1c3UiR92LjWPtDviJBeuvPX1VQKtsfaG8xYdDMB69o185JKc12U9bsctt1nfd';
 const zipCodeURL = 'https://www.zipcodeapi.com/rest/';
 
 var distance = {
 	find: function(req, res, next) {
-		request(zipCodeURL + apiKey + '/distance.json' 
+		request(zipCodeURL + apiKey + '/distance.json/' 
 				+ req.params.zipcode1 + '/' 
 				+ req.params.zipcode2 + '/mile',
 				function(error, response, body) {
